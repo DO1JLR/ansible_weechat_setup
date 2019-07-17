@@ -1,0 +1,3 @@
+[submodule "roles/base_packages"]
+	path = roles/base_packages
+	url = https://github.com/chaos-bodensee/role-base_packages.git
