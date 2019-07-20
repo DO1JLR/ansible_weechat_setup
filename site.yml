@@ -27,7 +27,7 @@
     - ssh-auth
     - sshd
 
-- name:
+- name: Create good dotfiles
   tags:
     - dotfiles
     - bashrc
@@ -36,3 +36,13 @@
     - fancy
   roles:
    - dotfiles
+
+- name: install and configure weechat
+  tags:
+    - defualt
+    - weechat
+    - install
+    - conf
+    - configure
+  roles:
+   - weechat
