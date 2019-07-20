@@ -20,3 +20,6 @@ admins:
 accounts:
   - l3d
 
+# create ssh directory
+ssh_public_key_store: 'admin_ssh_keys'
+

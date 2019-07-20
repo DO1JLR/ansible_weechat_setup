@@ -1,6 +1,6 @@
 ---
-
 - name: Install common packages
+  hosts: all
   tags:
     - base
     - packages
@@ -11,8 +11,11 @@
     - upgrade
   roles:
     - base_packages
+  vars:
+    ansible_ssh_user: root
 
 - name: Setup SSH and manage user
+  hosts: all
   tags:
     - ssh
     - sshd
@@ -26,8 +29,11 @@
   roles:
     - ssh-auth
     - sshd
+  vars:
+    ansible_ssh_user: root
 
 - name: Create good dotfiles
+  hosts: all
   tags:
     - dotfiles
     - bashrc
@@ -38,6 +44,7 @@
    - dotfiles
 
 - name: install and configure weechat
+  hosts: all
   tags:
     - defualt
     - weechat
