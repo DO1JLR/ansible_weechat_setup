@@ -1,0 +1,38 @@
+---
+
+- name: Install common packages
+  tags:
+    - base
+    - packages
+    - setup
+    - base_packages
+    - base-packages
+    - update
+    - upgrade
+  roles:
+    - base_packages
+
+- name: Setup SSH and manage user
+  tags:
+    - ssh
+    - sshd
+    - ssh-auth
+    - ssh_auth
+    - ssh-keys
+    - update
+    - users
+    - user
+    - default
+  roles:
+    - ssh-auth
+    - sshd
+
+- name:
+  tags:
+    - dotfiles
+    - bashrc
+    - vimrc
+    - home
+    - fancy
+  roles:
+   - dotfiles
