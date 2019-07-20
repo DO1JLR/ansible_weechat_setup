@@ -1,0 +1,4 @@
+---
+# base packages role should tell us smowthing about our system
+print_os_vars: true
+
