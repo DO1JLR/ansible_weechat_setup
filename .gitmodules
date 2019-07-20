@@ -10,3 +10,6 @@
 [submodule "roles/sshd"]
 	path = roles/sshd
 	url = https://github.com/chaos-bodensee/role_sshd.git
+[submodule "roles/dotfiles"]
+	path = roles/dotfiles
+	url = https://github.com/chaos-bodensee/role_dotfiles.git
