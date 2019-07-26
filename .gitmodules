@@ -16,3 +16,6 @@
 [submodule "roles/weechat"]
 	path = roles/weechat
 	url = https://github.com/chaos-bodensee/role_weechat.git
+[submodule "roles/bat"]
+	path = roles/bat
+	url = https://github.com/gantsign/ansible_role_bat.git

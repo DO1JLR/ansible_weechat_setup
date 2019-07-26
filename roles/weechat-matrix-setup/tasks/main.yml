@@ -1,0 +1,29 @@
+---
+- name: install requirements for matrix
+  become: true
+  package:
+    name:
+      - python-dev
+      - python3-dev
+      - python3-pip
+      - python-pip
+      - libxml2-dev
+      - libxslt-dev
+      - gcc
+      - g++
+      - python-setuptools
+      - python3-setuptools
+      - python3-distutils-extra
+      - python3-pytest
+      - python-future
+      - python3-future
+
+# git clone https://gitlab.matrix.org/matrix-org/olm.git
+# cd olm
+# make
+# make test
+# if clear
+# cd python
+# make
+## CANCEL if failed!!!
+

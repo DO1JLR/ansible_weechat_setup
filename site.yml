@@ -36,8 +36,10 @@
     - vimrc
     - home
     - fancy
+    - bat
   roles:
    - dotfiles
+   - bat
 
 - name: install and configure weechat
   hosts: all
@@ -49,3 +51,4 @@
     - configure
   roles:
    - weechat
+   - weechat-matrix-setup
