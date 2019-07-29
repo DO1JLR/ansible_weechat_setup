@@ -17,6 +17,9 @@
       - python3-pytest
       - python-future
       - python3-future
+      - python-cffi
+      - python3-cffi
+
 
 # git clone https://gitlab.matrix.org/matrix-org/olm.git
 # cd olm
