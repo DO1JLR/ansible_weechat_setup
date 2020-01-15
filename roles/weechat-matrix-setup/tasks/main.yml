@@ -20,6 +20,11 @@
       - python-cffi
       - python3-cffi
 
+- name: fail if not debian buster
+  fail:
+    msg: "This role is only compatible with Debian Buster. Sorry :-/"
+  when:
+   - ansible_distribution != 'Debian' and ansible_distribution_release != 'buster'
 
 # git clone https://gitlab.matrix.org/matrix-org/olm.git
 # cd olm
