@@ -1,4 +1,12 @@
 ---
+- name: check if ansible is not to old
+  hosts: localhost
+  tags:
+   - default
+  roles:
+    - version
+  gather_facts: no
+
 - name: Install common packages
   hosts: all
   tags:
