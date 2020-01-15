@@ -12,6 +12,9 @@ users:
     - l3d@backup-rsa.l3d.yt
     - l3d@backup.l3d.yt
 
+github_users:
+  l3d:
+    - do1jlr
 # admins with root permission
 admins:
   - l3d
