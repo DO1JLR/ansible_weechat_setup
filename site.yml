@@ -38,9 +38,11 @@
     - home
     - fancy
     - bat
+    - ntp
   roles:
    - dotfiles
    - bat
+   - ntp
 
 - name: install and configure weechat
   hosts: all
