@@ -14,6 +14,7 @@ git clone --recursive https://github.com/DO1JLR/ansible_weechat_setup.git
 git submodule update --init --recursive
 ```
 
+Or simply update via ``make update``!
 
  Ansible
 ---------

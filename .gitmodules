@@ -25,3 +25,6 @@
 [submodule "roles/ntp"]
 	path = roles/ntp
 	url = git@github.com:chaos-bodensee/role-ntp.git
+[submodule "roles/version"]
+	path = roles/version
+	url = https://github.com/chaos-bodensee/role-ansible_version.git
