@@ -22,6 +22,12 @@
 [submodule "roles/manage-users"]
 	path = roles/manage-users
 	url = https://github.com/chaos-bodensee/role-manage_users.git
+[submodule "roles/ntp"]
+	path = roles/ntp
+	url = https://github.com/chaos-bodensee/role-ntp.git
 [submodule "roles/version"]
 	path = roles/version
-	url = https://github.com/chaos-bodensee/role-ansible_version.git
+	url = https://github.com/roles-ansible/role-ansible_version.git
+[submodule "roles/ranger"]
+	path = roles/ranger
+	url = https://github.com/roles-ansible/role_ranger.git

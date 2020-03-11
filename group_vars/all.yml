@@ -23,8 +23,13 @@ admins:
 accounts:
   - l3d
 
-weechat_user: 'l3d'
+weechat:
+  user: 'l3d'
+  autostart: true
 
 # create ssh directory
 ssh_public_key_store: 'admin_ssh_keys'
 
+# we want a simple versionscheck on all our submodules
+# -> to make sure we never use a old version of a role
+submodules_versioncheck: true

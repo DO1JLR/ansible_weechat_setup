@@ -17,8 +17,10 @@
     - base-packages
     - update
     - upgrade
+    - ranger
   roles:
     - base_packages
+    - ranger
 
 - name: Setup SSH, SSHD and manage users
   hosts: all
@@ -46,9 +48,11 @@
     - home
     - fancy
     - bat
+    - ntp
   roles:
    - dotfiles
    - bat
+   - ntp
 
 - name: install and configure weechat
   hosts: all
