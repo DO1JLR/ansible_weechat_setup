@@ -17,8 +17,10 @@
     - base-packages
     - update
     - upgrade
+    - ranger
   roles:
     - base_packages
+    - ranger
 
 - name: Setup SSH, SSHD and manage users
   hosts: all
