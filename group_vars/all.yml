@@ -23,13 +23,16 @@ admins:
 accounts:
   - l3d
 
+# personal configuration for weechat.
+# For explaination please have a look into ``roles/weechat/README.md``
 weechat:
   user: 'l3d'
-  autostart: false
+  autostart: true
+  install_plugins: true
   use_custom_config: true
-  home_directory: "/home/l3d/.weechat"
+  home_directory: "/home/l3d"
   custom_config:
-    private_repo: false
+    private_repo: gitea@gitea.see-base.de:l3d/weechat-config.git
 
 # create ssh directory
 ssh_public_key_store: 'admin_ssh_keys'
