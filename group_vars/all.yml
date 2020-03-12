@@ -25,7 +25,11 @@ accounts:
 
 weechat:
   user: 'l3d'
-  autostart: true
+  autostart: false
+  use_custom_config: true
+  home_directory: "/home/l3d/.weechat"
+  custom_config:
+    private_repo: false
 
 # create ssh directory
 ssh_public_key_store: 'admin_ssh_keys'
