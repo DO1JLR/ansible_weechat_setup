@@ -1,13 +1,13 @@
 ---
 - name: combine weechat variables
   set_fact:
-    weechat-matrix: "{{ _weechat-matrix | combine(weechat-matrix, recursive=True) }}"
+    weechat_matrix: "{{ _weechat_matrix | combine(weechat-matrix, recursive=True) }}"
 
 - include_tasks: libolm.yml
-  when: weechat-matrix.install_libolm | bool
+  when: weechat_matrix.install_libolm | bool
 
 - include_tasks: requirements.yml
-  when: weechat-matrix.install_requirements | bool
+  when: weechat_matrix.install_requirements | bool
 
 - name: fail if not debian buster
   fail:
