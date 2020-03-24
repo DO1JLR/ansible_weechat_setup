@@ -1,7 +1,7 @@
 ---
 - name: combine weechat variables
   set_fact:
-    weechat_matrix: "{{ _weechat_matrix | combine(weechat-matrix, recursive=True) }}"
+    weechat_matrix: "{{ _weechat_matrix | combine(weechat_matrix, recursive=True) }}"
 
 - include_tasks: libolm.yml
   when: weechat_matrix.install_libolm | bool
