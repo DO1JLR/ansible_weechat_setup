@@ -1,0 +1,20 @@
+---
+- name: Add sid apt repository for libolm-dev
+  become: true
+  apt_repository:
+    repo: deb https://ftp.ch.debian.org/debian/ sid main
+    state: present
+
+- name: Install libolm-dev from sid
+  become: true
+  apt:
+    name:
+      - libolm-dev
+    default_release: sid
+    update_cache: yes
+
+- name: Remove sid apt repository
+  become: true
+  apt_repository:
+    repo: deb https://ftp.ch.debian.org/debian/ sid main
+    state: absent

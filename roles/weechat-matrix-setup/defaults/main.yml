@@ -1,0 +1,5 @@
+---
+weechat-matrix:
+  install_libolm: true
+  install_requirements: true
+
