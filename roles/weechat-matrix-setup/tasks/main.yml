@@ -1,4 +1,10 @@
 ---
+- name: fail if not debian sid
+  fail:
+    msg: "This role is only compatible with Debian Buster. Sorry :-/"
+  when:
+   - ansible_distribution != 'Debian' and ansible_distribution_release != 'sid'
+#--
 - name: combine weechat variables
   set_fact:
     weechat_matrix: "{{ _weechat_matrix | combine(weechat_matrix, recursive=True) }}"
@@ -9,12 +15,7 @@
 - include_tasks: requirements.yml
   when: weechat_matrix.install_requirements | bool
 
-- name: fail if not debian buster
-  fail:
-    msg: "This role is only compatible with Debian Buster. Sorry :-/"
-  when:
-   - ansible_distribution != 'Debian' and ansible_distribution_release != 'buster'
-# git clone https://gitlab.matrix.org/matrix-org/olm.git
+ git clone https://gitlab.matrix.org/matrix-org/olm.git
 # cd olm
 # make
 # make test

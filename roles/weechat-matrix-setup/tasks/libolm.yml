@@ -1,10 +1,10 @@
 ---
-- name: Add sid apt repository for libolm-dev
-  become: true
-  apt_repository:
-    repo: deb https://debian.ethz.ch/debian/ sid main
-    state: present
-    update_cache: no
+# - name: Add sid apt repository for libolm-dev
+#  become: true
+#  apt_repository:
+#    repo: deb https://debian.ethz.ch/debian/ sid main
+#    state: present
+#    update_cache: no
 
 - name: Install libolm-dev from sid
   become: true
@@ -15,8 +15,8 @@
     default_release: sid
     update_cache: yes
 
-- name: Remove sid apt repository
-  become: true
-  apt_repository:
-    repo: deb https://ftp.ch.debian.org/debian/ sid main
-    state: absent
+#- name: Remove sid apt repository
+#  become: true
+#  apt_repository:
+#    repo: deb https://ftp.ch.debian.org/debian/ sid main
+#    state: absent
