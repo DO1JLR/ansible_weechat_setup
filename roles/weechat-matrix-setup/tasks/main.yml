@@ -15,7 +15,7 @@
 - include_tasks: requirements.yml
   when: weechat_matrix.install_requirements | bool
 
- git clone https://gitlab.matrix.org/matrix-org/olm.git
+# git clone https://gitlab.matrix.org/matrix-org/olm.git
 # cd olm
 # make
 # make test
